@@ -1,0 +1,18 @@
+<div class="container">
+  <!-- begin footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="contact">
+        <div class="contact__title">Work inquiry, question or something else? <a href="mailto:{{site.author.email}}">Email me</a>.</div>
+        <ul class="contact__list list-reset">
+          {% for contact in site.contact %}
+          <li class="contact__item">
+            <a class="contact__link" href="{{contact.link}}">{{contact.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</div>

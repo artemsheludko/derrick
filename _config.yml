@@ -1,0 +1,66 @@
+title: Derrick Wells – Independent Product Designer
+logo:  # you can add own logo.
+description: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
+baseurl: "/derrick" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Author Settings
+author:
+  name: Derrick Wells
+  image: '/assets/img/01.jpg'
+  job: Independent Product Designer
+  bio: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
+  email: forexample@website.com
+
+
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/
+  - name: Facebook
+    link: https://facebook.com/
+  - name: Instagram
+    link: https://instagram.com/
+
+
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+
+
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

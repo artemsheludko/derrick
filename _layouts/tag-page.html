@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <section class="tag">
+
+    <div class="tag__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="tag__title">{{ page.tag }}</h1>
+    </div>
+
+    {% for post in page.posts %}
+    <!-- begin article -->
+    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+      {% if post.image %}
+      <div class="article__image-box">
+        <a href="{{post.url | prepend: site.baseurl}}" class="article__image" style="background-image: url({{post.image}})"></a>
+      </div>
+      {% endif %}
+      <div class="article__content">
+        <h2 class="article__title">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+        </h2>
+        <div class="article__meta">
+          <span class="article__date">Published <time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+        </div>
+        <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 130 }}{% endif %}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read the rest</a>
+      </div>
+    </div>
+    <!-- end article -->
+    {% endfor %}
+  </section>
+
+</div>

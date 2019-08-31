@@ -1,0 +1,8 @@
+.wrapper-page {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @media only screen and (max-width: $mobile) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

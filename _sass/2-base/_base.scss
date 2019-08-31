@@ -1,0 +1,122 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  color: $dark;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input, textarea {
+    border: 1px solid #f9f9f9;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: #e02f40;
+    }
+    &:required:valid {
+      border-color: #34a74e;
+    }
+    }
+}
+
+::placeholder {
+	color: #666;
+}
+
+*::selection {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 45px 0 30px;
+  font-family: 'Lora', Georgia, Times, 'Times New Roman', serif;
+  line-height: initial;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+blockquote {
+  padding-left: 30px;
+  font-family: 'Lora', Georgia, Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  border-left: 1px solid $secondary-color;
+}
+
+pre {
+  overflow: auto;
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  &+em {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: $gray-dark;
+  }
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    transition: color 200ms;
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+hr {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 45px auto;
+  border-radius: 50%;
+  border: 0;
+  background: $secondary-color;
+}

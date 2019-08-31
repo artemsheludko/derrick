@@ -1,0 +1,17 @@
+$desktop: 992px;
+$tablet:  768px;
+$mobile:  576px;
+
+.container {
+  max-width: 670px;
+}
+
+.container-full {
+  max-width: 1100px;
+}
+
+.container, .container-full {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}

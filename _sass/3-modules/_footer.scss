@@ -1,0 +1,39 @@
+/* Footer */
+.footer {
+  margin-top: 80px;
+  padding: 60px 0;
+  border-top: 1px solid $gray-lighten;
+  @media (max-width: $mobile) {
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact__title {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 25px;
+  color: $gray-dark;
+  a {
+    font-family: 'Lora', serif;
+    color: $dark;
+  }
+}
+
+.contact__item {
+  display: inline-block;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  font-size: 16px;
+  color: $dark;
+}

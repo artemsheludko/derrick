@@ -1,0 +1,42 @@
+<div class="container-full">
+  <!-- begin header -->
+  <header class="header">
+
+    <div class="logo">
+      <a class="logo__link" href="{{ site.baseurl }}/">
+      {%if site.logo %}
+        <img class="logo__image" src="{{ site.baseurl }}/assets/img/{{ site.logo }}" alt="{{ site.title }}">
+      {% else %}
+        {{ site.author.name }}
+      {% endif %}
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <span class="main-nav__open">menu</span>
+
+      <div class="main-nav__box">
+        <span class="main-nav__close">Close</span>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="{{site.baseurl}}/" class="nav__link">Home</a>
+          </li>
+          {% for page in site.pages %}
+            {% unless page.name == 'tags.html' or page.name == '404.html' %}
+          {% if page.title %}
+          <li class="nav__item">
+            <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
+          </li>
+          {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- end header -->
+</div>

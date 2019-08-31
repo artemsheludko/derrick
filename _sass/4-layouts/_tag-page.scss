@@ -1,0 +1,19 @@
+/* Tag Page */
+.tag {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.tag__head {
+  margin-bottom: 80px;
+  padding-bottom: 70px;
+  text-align: center;
+  border-bottom: 1px solid $gray-lighten;
+}
+
+.tag__title {
+  margin: 0;
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: capitalize;
+}

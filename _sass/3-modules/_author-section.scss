@@ -1,0 +1,72 @@
+/* Author */
+.author {
+  margin: 80px 0;
+  padding-bottom: 70px;
+  border-bottom: 1px solid $gray-lighten;
+  @media (max-width: $mobile) {
+    margin: 50px 0;
+    padding-bottom: 50px;
+  }
+}
+
+.author__img {
+  display: block;
+  max-width: 130px;
+  max-height: 130px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  background-color: $gray-white;
+  transition: opacity 100ms ease;
+  &:hover {
+    .avatar {
+      opacity: 0.9;
+    }
+  }
+}
+
+.author__job {
+  margin-bottom: 15px;
+  font-size: 37px;
+  text-align: center;
+  color: $gray;
+}
+
+.author__bio {
+  max-width: 450px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: $gray-blue;
+}
+
+.author__more {
+  text-align: center;
+}
+
+a.say-hello {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  background-color: $primary-color;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    transform: translate(0px, -5px);
+    box-shadow: 0 10px 20px -4px rgba(30,28,122,0.3);
+  }
+}
+
+a.know-more {
+  margin-left: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  color: $gray;
+  text-decoration: underline;
+  &:hover {
+    color: $primary-color;
+  }
+}

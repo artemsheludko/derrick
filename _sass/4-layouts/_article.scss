@@ -1,0 +1,61 @@
+/* Article */
+.article {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.article__image-box {
+  display: table;
+  margin-right: 30px;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.article__image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $gray-white;
+}
+
+.article__title {
+  margin: 0;
+  a {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    color: $gray;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.article__meta {
+  margin-bottom: 15px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray-dark;
+}
+
+.article__excerpt {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 27px;
+  color: $gray;
+}
+
+.read-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: underline;
+  color: $primary-color;
+}
